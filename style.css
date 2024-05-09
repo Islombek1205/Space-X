@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+nav img{
+    width: 300px;   
+}
+nav ul{
+    width: 60%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 25px;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li::before,
+nav .shop_bar p::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.shop_bar{
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.shop_bar p{
+    position: relative;
+    padding: 10px 0px;
+}
+li:hover::before,
+.shop_bar p:hover::before{
+    left: 0;
+    width: 100%;
+    transition: .5s;
+}
+.first_fly{
+    width: 100%;
+    height: 803px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.first_fly video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.first_fly .inner{
+    width: 520px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+
+.inner p{
+    font-size: 20px;
+}
+.inner h1{
+    font-size: 40px;
+}
+button{
+    width: 130px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    font-size: 12px;
+}
+button b{
+    position: relative;
+    z-index: 1;
+}
+button::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+button:hover::before{
+    top: 0;
+    height: 100%;
+}
+button:hover{
+    color: black;
+}
+
+.first{
+    width: 100%;
+    height: 803px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+.first .inner{
+    width: 520px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+.second{
+    width: 100%;
+    height: 803px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.second .inner{
+    width: 520px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+.third{
+    width: 100%;
+    height: 803px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.third .inner{
+    width: 520px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    font-size: 12px;
+}
+footer ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
